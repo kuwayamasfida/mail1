@@ -1,16 +1,22 @@
 <form action="submit.php" method="post">
+
   <label>
-    部署名：
-    <input type="text" name="dept" required>
+    お問い合わせ先：
+    <select name="destination" required>
+      <option value="">選択してください</option>
+      <option value="sales">営業部</option>
+      <option value="support">サポート</option>
+      <option value="admin">管理部</option>
+    </select>
   </label>
 
   <label>
-    メール：
+    メールアドレス：
     <input type="email" name="email" required>
   </label>
 
   <label>
-    ご意見：
+    内容：
     <textarea name="message"></textarea>
   </label>
 
